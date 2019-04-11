@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>美团外卖</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_810487_l8m2v8touzc.css">
+</head>
+<body>
+    <!-- 首页部分 -->
+    <div class="groble">
+        <!-- 头部 -->
+    <header>
+            <!-- 背景图片 -->
+            <img alt="" class="headBg">
+            <!-- 蒙版部分 -->
+            <div class="headMeng"></div>
+            <!-- 标题头部 -->
+            <div class="headCon">
+               <div class="headLogo">
+                   <img alt="" class="logo_bg">
+               </div> 
+               <div class="headText">
+                   <div>
+                       <img src="./images/brand@2x - 副本.png" alt="">
+                       <span></span>
+                   </div>
+                   <p></p>
+                   <div>
+                       <img src="./images/decrease_1@2x.png" alt="">
+                       <span></span>
+                   </div>
+               </div> 
+            </div>
+            <!-- 公告部分 -->
+            <div class="headNotice">
+                <img src="./images/bulletin@2x - 副本.png" alt="">
+                <span class="noticeText"></span>
+                <span class="iconfont icon-xiangyou"></span>
+            </div>
+            <!-- 5个部分 -->
+            <div class="head_five">
+                <span>5个<i class="iconfont icon-xiangyou"></i></span>
+            </div>
+    </header>
+    <!-- 中间主体内容部分 -->
+    <div class="con_box clearfix" >
+        <!-- 导航 -->
+        <ul class="nav">
+            <li class="on">商品</li>
+            <li>评价</li>
+            <li>商家</li>
+        </ul>
+        <div class="content_box"  >
+            <!-- 商品部分 -->
+            <div class="content" >
+                <!-- 左边列表 -->
+                <div class="leftList swiper-container">
+                    <ul class="swiper-wrapper leftListWrapper">
+                    </ul>
+                </div>
+                <!-- 右边详细食物 -->
+                <div class="menuList swiper-container">
+                    <ul class="aaaa swiper-wrapper">               
+                    </ul>
+                </div>
+            </div>
+            <!-- 评价部分 -->
+            <div class="content scoreBox" style="display:none;"> 
+                <!-- 评分 -->
+                <!-- <div class="score"> -->
+                    <!-- 左边评分部分 -->
+                    <!-- <div class="leftScore">
+                        <p>3.9</p>
+                        <p>综合评分</p>
+                        <p>高于周边商家69.2%</p>
+                    </div> -->
+                    <!-- 右边评星部分 -->
+                    <!-- <div class="rightScore">
+                        <div class="third_Score">
+                            <span>服务态度</span>
+                            <img src="./images/star36_on@2x.png" alt="">
+                            <img src="./images/star36_on@2x.png" alt="">
+                            <img src="./images/star36_on@2x.png" alt="">
+                            <img src="./images/star36_on@2x.png" alt="">
+                            <img src="./images/star36_off@2x.png" alt="">
+                            <span>3.9</span>
+                        </div> -->
+                        <!-- <div class="third_Score">
+                            <span>服务态度</span>
+                            <img src="./images/star36_on@2x.png" alt="">
+                            <img src="./images/star36_on@2x.png" alt="">
+                            <img src="./images/star36_on@2x.png" alt="">
+                            <img src="./images/star36_on@2x.png" alt="">
+                            <img src="./images/star36_off@2x.png" alt="">
+                            <span>4.0</span>
+                        </div>
+                        <div class="third_Score">
+                            <span>送达时间</span>
+                            <span>44分钟</span>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- 中间背景部分 -->
+                <!-- <div class="scoreGap">
+                </div> -->
+                <!-- 只看有内容的评价 -->
+                <!-- <div class="scoreAss"> -->
+                    <!-- 评价总体上面 -->
+                    <!-- <div class="scoreAssTop">
+                        <span>全部<i>57</i></span>
+                        <span>满意<i>47</i></span>
+                        <span>不满意<i>10</i></span>    
+                    </div>
+                    <div class="scoreAssBot">
+                        <span class="iconfont icon-duigou "></span>
+                        <span>只看有内容的评价</span>
+                    </div>
+                </div> -->
+                <!-- 用户详细评价 -->
+                <!-- <div class="defs_box"> -->
+                    <!-- <div class="defs">
+                        <img src="http://static.galileo.xiaojukeji.com/static/tms/default_header.png" alt="" class="defsImg">
+                        <div class="defsCon">
+                            <p>
+                                <span>聚***家</span>
+                                <span>2016-7-13 20:33</span>
+                            </p>
+                            <div>
+                                <img src="./images/star36_on@2x.png" alt="">
+                                <img src="./images/star36_on@2x.png" alt="">
+                                <img src="./images/star36_on@2x.png" alt="">
+                                <img src="./images/star36_on@2x.png" alt="">
+                                <img src="./images/star36_off@2x.png" alt="">
+                                <span>80分钟送达</span>
+                            </div>
+                            <p>油条凉了,而且没有酱.75分钟才到.很慢.送餐态度不错但毕竟好晚了啊.</p>
+                            <div>
+                                <i class="iconfont icon-dianzan_active defsZan"></i>
+                                <span>大王香菇卤...</span>
+                                <span>大王香菇卤...</span>
+                                <span>大王香菇卤...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="defs">
+                        <img src="http://static.galileo.xiaojukeji.com/static/tms/default_header.png" alt="" class="defsImg">
+                        <div class="defsCon">
+                            <p>
+                                <span>聚***家</span>
+                                <span>2016-7-13 20:33</span>
+                            </p>
+                            <div>
+                                <img src="./images/star36_on@2x.png" alt="">
+                                <img src="./images/star36_on@2x.png" alt="">
+                                <img src="./images/star36_on@2x.png" alt="">
+                                <img src="./images/star36_on@2x.png" alt="">
+                                <img src="./images/star36_off@2x.png" alt="">
+                                <span>80分钟送达</span>
+                            </div>
+                            <p>这次太慢了,希望下次能直接和客户沟通好,而不是我一次次打电话问,但快递师傅态度很好</p>
+                            <div>
+                                <i class="iconfont icon-cai defsCai"></i>
+                                <span>大王香菇卤...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="defs">
+                        <img src="http://static.galileo.xiaojukeji.com/static/tms/default_header.png" alt="" class="defsImg">
+                        <div class="defsCon">
+                            <p>
+                                <span>聚***家</span>
+                                <span>2016-7-13 20:33</span>
+                            </p>
+                            <div>
+                                <img src="./images/star36_on@2x.png" alt="">
+                                <img src="./images/star36_on@2x.png" alt="">
+                                <img src="./images/star36_on@2x.png" alt="">
+                                <img src="./images/star36_on@2x.png" alt="">
+                                <img src="./images/star36_off@2x.png" alt="">
+                                <span>80分钟送达</span>
+                            </div>
+                            <p>油条凉了,而且没有酱.75分钟才到.很慢.送餐态度不错但毕竟好晚了啊.</p>
+                            <div>
+                                <i class="iconfont icon-dianzan_active defsZan"></i>
+                                <span>大王香菇卤...</span>
+                                <span>大王香菇卤...</span>
+                                <span>大王香菇卤...</span>
+                            </div>
+                        </div>
+                    </div> -->
+                <!-- </div> -->
+            </div>
+            <!-- 商家部分 -->
+            <div class="content sellerBox" style="display:none;"> 
+                <!-- 商家头部 -->
+                <!-- <div class="sellerTitleBox">
+                    <div class="sellerHead"> -->
+                        <!-- 商家头部左边 -->
+                        <!-- <div class="sellerHeadLeft">
+                            <p>粥品香坊 ( 大运村 )</p>
+                            <div>
+                                <img src="./images/star36_on@2x.png" alt="">
+                                <img src="./images/star36_on@2x.png" alt="">
+                                <img src="./images/star36_on@2x.png" alt="">
+                                <img src="./images/star36_on@2x.png" alt="">
+                                <img src="./images/star36_off@2x.png" alt="">
+                                <span>(661)</span>
+                                <span>月销690单</span>
+                            </div>
+                        </div> -->
+                        <!-- 商家头部右边 -->
+                        <!-- <div class="sellerHeadRight">
+                            <div class="iconfont icon-aixin11"></div>
+                            <div>已收藏</div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- 详细说明 -->
+                <!-- <div class="sellerMsg">
+                    <span>
+                        <p>起送价</p>
+                        <p><i>20</i>元</p>
+                    </span>
+                    <span>
+                        <p>商家配送</p>
+                        <p><i>4</i>元</p>
+                    </span>
+                    <span>
+                        <p>平均配送时间</p>
+                        <p><i>39</i>分钟</p>
+                    </span>
+                </div> -->
+                <!-- 中间背景部分 -->
+                <!-- <div class="sellerBg">
+                </div> -->
+                <!-- 公告与活动 -->
+                <!-- <div class="sellerNotice">
+                    <h4>公告与活动</h4>
+                    <p>
+                    </p>
+                </div> -->
+                <!-- 优惠列表 -->
+                <!-- <ul class="sellerList">
+                    <li>
+                        <img src="./images/decrease_4@2x.png" alt="">
+                        <span>在线支付满28减5</span>
+                    </li>
+                    <li>
+                        <img src="./images/discount_4@2x.png" alt="">
+                        <span>VC无限橙果汁全场8折</span>
+                    </li>
+                    <li>
+                        <img src="./images/discount_4@2x.png" alt="">
+                        <span>单人精彩套餐</span>
+                    </li>
+                    <li>
+                        <img src="./images/special_4@2x.png" alt="">
+                        <span>该商家支持发票,请下单写好发票抬头</span>
+                    </li>
+                    <li>
+                        <img src="./images/special_4@2x.png" alt="">
+                        <span>已加入“外卖保”计划,食品安全保障</span>
+                    </li>
+                    <li>
+                        <img src="./images/invoice_2@2x.png" alt="">
+                        <span>在线支付满28减5</span>
+                    </li>
+                    <li>
+                        <img src="./images/guarantee_2@2x.png" alt="">
+                        <span>在线支付满28减5</span>
+                    </li>
+                </ul> -->
+                <!-- 中间背景部分 -->
+                <!-- <div class="sellerBg">
+                </div> -->
+                <!-- 商家实景 -->
+                <!-- <div class="sellerView"> -->
+                    <!-- <h4>商家实景</h4> -->
+                    <!-- 图片轮播 -->
+                    <!-- <div class="viewSwiper swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide ">
+                                <img src="http://fuss10.elemecdn.com/8/71/c5cf5715740998d5040dda6e66abfjpeg.jpeg?imageView2/1/w/180/h/180" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="http://fuss10.elemecdn.com/b/6c/75bd250e5ba69868f3b1178afbda3jpeg.jpeg?imageView2/1/w/180/h/180" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="http://fuss10.elemecdn.com/f/96/3d608c5811bc2d902fc9ab9a5baa7jpeg.jpeg?imageView2/1/w/180/h/180" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="http://fuss10.elemecdn.com/6/ad/779f8620ff49f701cd4c58f6448b6jpeg.jpeg?imageView2/1/w/180/h/180" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="http://fuss10.elemecdn.com/f/96/3d608c5811bc2d902fc9ab9a5baa7jpeg.jpeg?imageView2/1/w/180/h/180" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="http://fuss10.elemecdn.com/6/ad/779f8620ff49f701cd4c58f6448b6jpeg.jpeg?imageView2/1/w/180/h/180" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- 中间背景部分 -->
+                <!-- <div class="sellerBg">
+                </div> -->
+                <!-- 商家信息 -->
+                <!-- <ul class="AddressList">
+                    <li>
+                        <span>该商家支持发票,请下单写好发票抬头</span>
+                    </li>
+                    <li>
+                        <span>品类:其他菜系,包子粥店</span>
+                    </li>
+                    <li>
+                        <span>北京市昌平区回龙观西大街龙观置业大厦底商B座102单元1340</span>
+                    </li>
+                    <li>
+                        <span>营业时间:10:00-20:30</span>
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+        <!-- 底部部分 -->
+        <footer>
+            <!-- 购物车 -->
+            <div class="footFoodCar">
+                <!-- 购物车图标 -->
+                <div class="carFont">
+                    <div class="foodCarAfter"></div>
+                    <span class="iconfont icon-gouwuche carBtn"></span>
+                </div>
+            </div>
+            <i>¥<b class="priceAll">0</b></i>
+            <i></i>
+            <i>另需配送费¥4元</i>
+            <!-- 20元起送 -->
+            <div class="deliver">
+                <span class="chaPrice">¥20起送</span>
+            </div>
+        </footer>
+    </div>
+    </div>
+    <!-- 第二页优惠界面 -->
+    <div class="discount">
+        <!-- 头部 -->
+        <!-- <div class="storeTitle">
+            <div class="stareHead">粥品香坊 ( 大运村 )</div>
+            <div class="stare">
+                <img src="./images/star24_on@2x.png" alt="">
+                <img src="./images/star24_on@2x.png" alt="">
+                <img src="./images/star24_on@2x.png" alt="">
+                <img src="./images/star24_on@2x.png" alt="">
+                <img src="./images/star24_on@2x.png" alt="">
+            </div>
+        </div>   -->
+        <!-- 优惠信息-->
+        <!-- <div class="discount_msg"> -->
+            <!-- 优惠头部 -->
+            <!-- <div class="msg_head">
+                <span></span>
+                <span>优惠信息</span>
+                <span></span>
+            </div> -->
+            <!-- 主体内容上 -->
+            <!-- <ul class="msg_con">
+            <li>
+                    <span>在线支付满28减5,满50减10</span>
+                </li>
+                <li>
+                    <span>单人精彩赛</span>
+                </li>
+                <li>
+                    <span>清肺雪梨汤八折抢购</span>
+                </li>
+                <li>
+                    <span>特价饮品八折抢购</span>
+                </li>
+                <li>
+                    <span>单人特色套餐</span>
+                </li>
+            </ul> -->
+            <!-- 优惠头部 -->
+            <!-- <div class="msg_head">
+                <span></span>
+                <span>商家公告</span>
+                <span></span>
+            </div>
+            <div class="msg_text"></div>
+            <div class="delete iconfont icon-chax"></div> -->
+        <!-- </div> -->
+    </div>
+    <!-- 第三页购物车部分 -->
+    <div class="shoppingCard">   
+
+    </div>
+    <!-- 底部购物车列表 -->
+    <div class="carList">
+            <div class="carHead">
+                <span>购物车</span>
+                <span class="carDelete">清空</span>
+            </div>
+            <ul class="foodCarList">
+                <!-- <li class=" carSlist">
+                    <div>莲子核桃黑米粥</div>
+                    <div>
+                        <span><i>¥</i>10</span>
+                        <span class="icon-jiancopyx iconfont carReduce"></span>
+                        <input type="text" value="1" class="carNum">
+                        <span class="icon-jia- iconfont carAdd"></span>
+                    </div>
+                </li>
+                <li class=" carSlist">
+                    <div>莲子核桃黑米粥</div>
+                    <div>
+                        <span><i>¥</i>10</span>
+                        <span class="icon-jiancopyx iconfont carReduce"></span>
+                        <input type="text" value="1" class="carNum">
+                        <span class="icon-jia- iconfont carAdd"></span>
+                    </div>
+                </li>
+                <li class=" carSlist">
+                    <div>莲子核桃黑米粥</div>
+                    <div>
+                        <span><i>¥</i>10</span>
+                        <span class="icon-jiancopyx iconfont carReduce"></span>
+                        <input type="text" value="1" class="carNum">
+                        <span class="icon-jia- iconfont carAdd"></span>
+                    </div>
+                </li>
+                <li class=" carSlist">
+                    <div>莲子核桃黑米粥</div>
+                    <div>
+                        <span><i>¥</i>10</span>
+                        <span class="icon-jiancopyx iconfont carReduce"></span>
+                        <input type="text" value="1" class="carNum">
+                        <span class="icon-jia- iconfont carAdd"></span>
+                    </div>
+                </li>
+                <li class=" carSlist">
+                    <div>莲子核桃黑米粥</div>
+                    <div>
+                        <span><i>¥</i>10</span>
+                        <span class="icon-jiancopyx iconfont carReduce"></span>
+                        <input type="text" value="1" class="carNum">
+                        <span class="icon-jia- iconfont carAdd"></span>
+                    </div>
+                </li>
+                <li class=" carSlist">
+                    <div>莲子核桃黑米粥</div>
+                    <div>
+                        <span><i>¥</i>10</span>
+                        <span class="icon-jiancopyx iconfont carReduce"></span>
+                        <input type="text" value="1" class="carNum">
+                        <span class="icon-jia- iconfont carAdd"></span>
+                    </div>
+                </li> -->
+               
+            </ul>
+    </div>
+    <!-- 单个商品页 -->
+    <div class="singleFood">
+        <!-- <div class="singleDel iconfont icon-clear-d7d8d9" style="display:none;"></div> -->
+        <!-- 商品图片 -->
+        <!-- <img src="http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/750/h/750" alt="" class="singleImg"> -->
+        <!-- 头部 -->
+        <!-- <div class="singleHead">
+            <p>皮蛋瘦肉粥</p>
+            <p>
+                <span>月售1132份</span>
+                <span>好评率100%</span>
+            </p>
+            <div class="singleCon">
+                <div class="singleConTop">
+                    <span>¥<i>24</i></span>
+                    <span><del>¥<i>28</i></del></span>
+                </div>
+                <div class="singleConBot">加入购物车</div>
+            </div>
+        </div> -->
+        <!-- 背景 -->
+        <!-- <div class="singleBg">
+        
+        </div> -->
+        <!-- 商品介绍 -->
+        <!-- <div class="singleInfos">
+            <h4>商品介绍</h4>
+            <p>
+                一碗皮蛋瘦肉粥，总是我到粥店时的不二之选。香浓软滑
+                ，饱腹暖心，皮蛋的Q弹与瘦肉的滑嫩伴着粥香溢于满口，
+                让人喝这样的一碗粥也觉得心满意足
+            </p>
+        </div> -->
+        <!-- 背景 -->
+        <!-- <div class="singleBg">
+        
+        </div> -->
+        <!-- 只看有内容的评价 -->
+        <!-- <div class="singleAss"> -->
+            <!-- 评价总体上面 -->
+            <!-- <h4>商品评价</h4>
+            <div class="singleAssTop">
+                <span>全部<i>57</i></span>
+                <span>满意<i>47</i></span>
+                <span>不满意<i>10</i></span>    
+            </div>
+            <div class="singleAssBot">
+                <span class="iconfont icon-duigou "></span>
+                <span>只看有内容的评价</span>
+            </div>
+        </div> -->
+        <!-- 用户评价 -->
+        <!-- 关闭页面 -->
+        <!-- <ul class="singleList"> -->
+            <!-- <li> -->
+                <!-- 第一排时间用户 -->
+                <!-- <div class="singleFir">
+                    <div>
+                        <span>2016-07-07</span>
+                        <span>12:34</span>
+                    </div>
+                    <div>
+                        <span>3*****2</span>
+                        <img src="http://static.galileo.xiaojukeji.com/static/tms/default_header.png" alt="">
+                    </div>
+                </div> -->
+                <!-- 第二排时间用户 -->
+                    <!-- <div class="singleSec">
+                    <span class="iconfont icon-cai"></span>
+                    <span>太少了,不够一个人吃</span>
+                </div>
+            </li> -->
+            <!-- <li> -->
+                <!-- 第一排时间用户 -->
+                <!-- <div class="singleFir">
+                    <div>
+                        <span>2016-07-07</span>
+                        <span>12:34</span>
+                    </div>
+                    <div>
+                        <span>3*****2</span>
+                        <img src="http://static.galileo.xiaojukeji.com/static/tms/default_header.png" alt="">
+                    </div>
+                </div> -->
+                <!-- 第二排时间用户 -->
+                <!-- <div class="singleSec">
+                    <span class="iconfont icon-cai"></span>
+                    <span>太少了,不够一个人吃</span>
+                </div>
+            </li> -->
+            <!-- <li>
+                <!-- 第一排时间用户 -->
+                <!-- <div class="singleFir">
+                    <div>
+                        <span>2016-07-07</span>
+                        <span>12:34</span>
+                    </div>
+                    <div>
+                        <span>3*****2</span>
+                        <img src="http://static.galileo.xiaojukeji.com/static/tms/default_header.png" alt="">
+                    </div>
+                </div> -->
+                <!-- 第二排时间用户 -->
+                <!-- <div class="singleSec">
+                    <span class="iconfont icon-cai"></span>
+                    <span>太少了,不够一个人吃</span>
+                </div>
+            </li> -->
+        <!-- </ul>  -->
+    </div>
+    
+
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/swiper-3.4.2.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        // document.documentElement.style.fontSize = document.documentElement.clientWidth/7.5+"px";
+    </script>
+</body>
+</html>

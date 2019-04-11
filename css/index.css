@@ -1,0 +1,1341 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  line-height: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+html {
+  font-size: calc(100vw/7.5);
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i {
+  font-style: normal;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: 0;
+}
+textarea {
+  resize: none;
+}
+input,
+textarea,
+button {
+  outline: none;
+}
+/********************************头部样式*********************************/
+.groble header {
+  position: relative;
+  overflow: hidden;
+}
+.groble header.filterH {
+  -moz-filter: blur(0.1rem);
+  -ms-filter: blur(0.1rem);
+  filter: blur(0.1rem);
+}
+.groble header .headBg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 150%;
+  z-index: -2;
+  -moz-filter: blur(0.1rem);
+  -ms-filter: blur(0.1rem);
+  filter: blur(0.1rem);
+}
+.groble header .headMeng {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 150%;
+  z-index: -1;
+  background: rgba(7, 17, 27, 0.5);
+}
+.groble header .headCon {
+  display: flex;
+  padding: 0.48rem 0.24rem 0.36rem 0.48rem;
+}
+.groble header .headCon .headLogo {
+  width: 1.28rem;
+  height: 1.28rem;
+  border-radius: 0.04rem;
+  margin-right: 0.32rem;
+}
+.groble header .headCon .headLogo img {
+  width: 1.28rem;
+  height: 1.28rem;
+}
+.groble header .headCon .headText {
+  flex: 1;
+}
+.groble header .headCon .headText div:nth-of-type(1) {
+  margin-bottom: 0.16rem;
+  display: flex;
+  margin-top: 0.04rem;
+}
+.groble header .headCon .headText div:nth-of-type(1) img {
+  margin-right: 0.12rem;
+  vertical-align: middle;
+  width: 0.6rem;
+  height: 0.36rem;
+}
+.groble header .headCon .headText div:nth-of-type(1) span {
+  flex: 1;
+  font-size: 0.32rem;
+  color: white;
+  line-height: 0.36rem;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.groble header .headCon .headText p:nth-of-type(1) {
+  font-size: 0.24rem;
+  font-weight: 200;
+  line-height: 0.24rem;
+  margin-bottom: 0.2rem;
+  color: white;
+}
+.groble header .headCon .headText div:nth-of-type(2) {
+  display: flex;
+}
+.groble header .headCon .headText div:nth-of-type(2) img {
+  margin-right: 0.08rem;
+  vertical-align: middle;
+  margin-bottom: 0.04rem;
+  width: 0.24rem;
+  height: 0.24rem;
+}
+.groble header .headCon .headText div:nth-of-type(2) span {
+  flex: 1;
+  font-size: 0.2rem;
+  color: white;
+  line-height: 0.24rem;
+  font-weight: 200;
+  vertical-align: middle;
+}
+.groble header .headNotice {
+  width: 100%;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  display: flex;
+  background-color: rgba(7, 17, 27, 0.2);
+  padding: 0 0.24rem;
+  align-items: center;
+}
+.groble header .headNotice img {
+  width: 0.44rem;
+  height: 0.24rem;
+  margin-right: 0.08rem;
+}
+.groble header .headNotice span:nth-of-type(1) {
+  font-size: 0.2rem;
+  color: white;
+  font-weight: 200;
+  line-height: 0.56rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.groble header .headNotice span:nth-of-type(2) {
+  font-size: 0.2rem;
+  font-weight: normal;
+  cursor: pointer;
+  color: white;
+}
+.groble header .head_five {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0.24rem;
+  bottom: 0.8rem;
+  height: 0.48rem;
+  width: 0.8rem;
+  border-radius: 0.16rem;
+  padding-left: 0.16rem;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.14rem 0 0.14rem 0.14rem;
+}
+.groble header .head_five span {
+  font-weight: 200;
+  line-height: 0.24rem;
+  font-size: 0.2rem;
+  color: white;
+}
+.groble header .head_five span i {
+  margin-left: 0.04rem;
+  font-size: 0.2rem;
+}
+.groble .con_box {
+  height: 10.68rem;
+  overflow: hidden;
+  position: relative;
+  /******************************* 底部 *************************************************/
+}
+.groble .con_box .nav {
+  height: 0.8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 0.03rem solid rgba(7, 17, 27, 0.1);
+}
+.groble .con_box .nav.filterH {
+  -moz-filter: blur(0.1rem);
+  -ms-filter: blur(0.1rem);
+  filter: blur(0.1rem);
+}
+.groble .con_box .nav li {
+  font-size: 0.28rem;
+  color: #4d555d;
+  line-height: 0.28rem;
+}
+.groble .con_box .nav li.on {
+  color: #f01414;
+}
+.groble .con_box .content {
+  display: flex;
+  height: calc(100vh - 4.52rem);
+  position: relative;
+}
+.groble .con_box .content.filterH {
+  -moz-filter: blur(0.1rem);
+  -ms-filter: blur(0.1rem);
+  filter: blur(0.1rem);
+}
+.groble .con_box .content .leftList {
+  height: calc(100vh - 4.72rem);
+  width: 1.6rem;
+}
+.groble .con_box .content .leftList .leftListWrapper {
+  height: auto;
+}
+.groble .con_box .content .leftList .leftListWrapper li {
+  width: 1.6rem;
+  font-size: 0.24rem;
+  color: #4d555d;
+  line-height: 0.28rem;
+  font-weight: 200;
+  padding: 0.3rem;
+  background: #f3f5f7;
+}
+.groble .con_box .content .leftList .leftListWrapper li img {
+  width: 0.24rem;
+  vertical-align: middle;
+  margin-top: -0.04rem;
+}
+.groble .con_box .content .leftList .leftListWrapper li.active {
+  background: white;
+}
+.groble .con_box .content .leftList .leftListWrapper li:nth-child(2)::before {
+  content: "";
+  width: 0.36rem;
+  height: 0.24rem;
+  padding-left: 0.3rem;
+  background: url("../images/special_3@2x.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.groble .con_box .content .menuList {
+  flex: 1;
+  height: calc(100vh - 4.72rem);
+  width: 100%;
+}
+.groble .con_box .content .menuList .aaaa {
+  height: auto;
+  position: absolute;
+}
+.groble .con_box .content .menuList .aaaa li {
+  height: auto !important;
+}
+.groble .con_box .content .menuList .aaaa li .menu_title {
+  font-size: 0.24rem;
+  color: #93999f;
+  line-height: 0.52rem;
+  background: #f3f5f7;
+  border-left: 0.02rem solid #d0dde1;
+  padding-left: 0.3rem;
+}
+.groble .con_box .content .menuList .aaaa li .menuFood {
+  padding-top: 0.36rem;
+}
+.groble .con_box .content .menuList .aaaa li .menuFood .foodBox {
+  padding: 0 0 0.36rem 0.36rem;
+}
+.groble .con_box .content .menuList .aaaa li .menuFood .foodBox:nth-of-type(n+2) {
+  padding-bottom: 0.48rem;
+}
+.groble .con_box .content .menuList .aaaa li .menuFood .foodBox .foodPart {
+  border-bottom: 0.01rem solid rgba(7, 17, 27, 0.2);
+  display: flex;
+  padding-bottom: 0.12rem;
+}
+.groble .con_box .content .menuList .aaaa li .menuFood .foodBox .foodPart .foodHeadLogo {
+  width: 1.16rem;
+  height: 1.16rem;
+  margin-right: 0.2rem;
+}
+.groble .con_box .content .menuList .aaaa li .menuFood .foodBox .foodPart .menu_body {
+  flex: 1;
+}
+.groble .con_box .content .menuList .aaaa li .menuFood .foodBox .foodPart .menu_body .menu_first_p {
+  margin-top: 0.04rem;
+  font-size: 0.28rem;
+  color: #07111b;
+  line-height: 0.28rem;
+}
+.groble .con_box .content .menuList .aaaa li .menuFood .foodBox .foodPart .menu_body p:nth-child(2) {
+  margin-top: 0.16rem;
+  font-size: 0.2rem;
+  color: #93999f;
+  line-height: 0.2rem;
+}
+.groble .con_box .content .menuList .aaaa li .menuFood .foodBox .foodPart .menu_body p:nth-child(3) {
+  display: flex;
+  margin-top: 0.16rem;
+  font-size: 0.2rem;
+  color: #93999f;
+  line-height: 0.2rem;
+}
+.groble .con_box .content .menuList .aaaa li .menuFood .foodBox .foodPart .menu_body p:nth-child(3) span:nth-child(1) {
+  margin-right: 0.24rem;
+}
+.groble .con_box .content .menuList .aaaa li .menuFood .foodBox .foodPart .menu_body .menuMoney {
+  display: flex;
+  margin-bottom: 0.16rem;
+  width: calc(100vw - 6.4rem);
+}
+.groble .con_box .content .menuList .aaaa li .menuFood .foodBox .foodPart .menu_body .menuMoney span:nth-child(1) {
+  font-size: 0.28rem;
+  color: #f01414;
+  font-weight: 700;
+  line-height: 0.48rem;
+  margin-right: 0.16rem;
+}
+.groble .con_box .content .menuList .aaaa li .menuFood .foodBox .foodPart .menu_body .menuMoney span:nth-child(1) i {
+  font-size: 0.2rem;
+  font-weight: normal;
+  line-height: 0.48rem;
+}
+.groble .con_box .content .menuList .aaaa li .menuFood .foodBox .foodPart .menu_body .menuMoney span:nth-child(2) {
+  font-size: 0.2rem;
+  color: #93999f;
+  font-weight: 700;
+  line-height: 0.48rem;
+}
+.groble .con_box .content .menuList .aaaa li .menuFood .foodBox .foodPart .menu_body .menuMoney span:nth-child(2) i {
+  font-weight: normal;
+}
+.groble .con_box .content .menuList .aaaa li .menuFood .foodBox .foodPart .numBox {
+  display: flex;
+  align-items: center;
+}
+.groble .con_box .content .menuList .aaaa li .menuFood .foodBox .foodPart .numBox .menuAdd {
+  font-size: 0.48rem;
+  color: #00a0dc;
+  line-height: 0.48rem;
+  margin-top: 1rem;
+  margin-right: 0.12rem;
+}
+.groble .con_box .content .menuList .aaaa li .menuFood .foodBox .foodPart .numBox .menuReduc {
+  display: none;
+  font-size: 0.48rem;
+  color: #00a0dc;
+  line-height: 0.48rem;
+  margin-top: 1rem;
+}
+.groble .con_box .content .menuList .aaaa li .menuFood .foodBox .foodPart .numBox .foodNum {
+  display: none;
+  font-size: 0.3rem;
+  color: #93999f;
+  line-height: 0.48rem;
+  border: none;
+  width: 0.4rem;
+  margin-top: 0.96rem;
+  margin-right: 0.1rem;
+}
+.groble .con_box .content .menuList .aaaa li .menuFood .foodBox .foodPart .numBox .foodNum:nth-child(1) {
+  margin-top: 0.8rem;
+}
+.groble .con_box .scoreBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  overflow: auto;
+  height: calc(100vh - 4.6rem);
+}
+.groble .con_box .scoreBox .score {
+  display: flex;
+  padding: 0.36rem 0;
+  justify-content: space-around;
+  height: 2.12rem;
+  border-bottom: 0.03rem solid rgba(7, 17, 27, 0.1);
+}
+.groble .con_box .scoreBox .score .leftScore {
+  text-align: center;
+  padding: 0  0.36rem;
+  border-right: 0.02rem solid rgba(7, 17, 27, 0.1);
+}
+.groble .con_box .scoreBox .score .leftScore p:nth-child(1) {
+  font-size: 0.48rem;
+  color: #ff9900;
+  line-height: 0.56rem;
+  margin-bottom: 0.12rem;
+}
+.groble .con_box .scoreBox .score .leftScore p:nth-child(2) {
+  font-size: 0.24rem;
+  color: #07111b;
+  line-height: 0.24rem;
+  margin-bottom: 0.16rem;
+}
+.groble .con_box .scoreBox .score .leftScore p:nth-child(3) {
+  font-size: 0.2rem;
+  color: #93999f;
+  line-height: 0.2rem;
+  margin-bottom: 0.12rem;
+}
+.groble .con_box .scoreBox .score .rightScore {
+  padding: 0 0.36rem;
+}
+.groble .con_box .scoreBox .score .rightScore .third_Score {
+  margin-bottom: 0.16rem;
+  display: flex;
+  align-items: center;
+}
+.groble .con_box .scoreBox .score .rightScore .third_Score:nth-of-type(3) span:nth-child(2) {
+  color: #93999f;
+  margin-left: 0.06rem;
+}
+.groble .con_box .scoreBox .score .rightScore .third_Score span:nth-of-type(1) {
+  font-size: 0.24rem;
+  color: #07111b;
+  line-height: 0.36rem;
+  margin-right: 0.24rem;
+}
+.groble .con_box .scoreBox .score .rightScore .third_Score img {
+  width: 0.3rem;
+  height: 0.3rem;
+  margin: 0 0.06rem;
+}
+.groble .con_box .scoreBox .score .rightScore .third_Score span:nth-of-type(2) {
+  font-size: 0.24rem;
+  color: #ff9900;
+  line-height: 0.36rem;
+  margin-left: 0.24rem;
+}
+.groble .con_box .scoreBox .scoreGap {
+  height: 0.34rem;
+  width: 100%;
+  background: #f3f5f7;
+  border-bottom: 0.03rem solid rgba(7, 17, 27, 0.1);
+}
+.groble .con_box .scoreBox .scoreAss .scoreAssTop {
+  padding: 0.36rem 0.36rem 0.36rem 0;
+  margin-left: 0.36rem;
+  width: calc(100vw - 0.72rem);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 0.02rem solid rgba(7, 17, 27, 0.1);
+}
+.groble .con_box .scoreBox .scoreAss .scoreAssTop span {
+  display: inline-block;
+  width: 1.22rem;
+  height: 0.66rem;
+  line-height: 0.66rem;
+  text-align: center;
+  color: white;
+  font-size: 0.24rem;
+  margin-right: 0.16rem;
+}
+.groble .con_box .scoreBox .scoreAss .scoreAssTop span:nth-child(1) {
+  background: #00a0dc;
+}
+.groble .con_box .scoreBox .scoreAss .scoreAssTop span:nth-child(2) {
+  background: #ccecf8;
+  color: #4d555d;
+}
+.groble .con_box .scoreBox .scoreAss .scoreAssTop span:nth-child(3) {
+  width: 1.46rem;
+  background: #E9EbEC;
+  color: #4d555d;
+}
+.groble .con_box .scoreBox .scoreAss .scoreAssBot {
+  padding: 0.28rem 0.4rem;
+  display: flex;
+  align-items: center;
+  width: calc(100vw);
+  border-bottom: 0.03rem solid rgba(7, 17, 27, 0.1);
+}
+.groble .con_box .scoreBox .scoreAss .scoreAssBot span {
+  font-size: 0.3rem;
+  color: #b7bbbf;
+}
+.groble .con_box .scoreBox .defs_box {
+  padding: 0 0.36rem;
+}
+.groble .con_box .scoreBox .defs_box .defs {
+  display: flex;
+  padding: 0.36rem 0;
+  border-bottom: 0.02rem solid rgba(7, 17, 27, 0.1);
+}
+.groble .con_box .scoreBox .defs_box .defs .defsImg {
+  width: 0.56rem;
+  height: 0.56rem;
+  border-radius: 50%;
+  margin-right: 0.24rem;
+}
+.groble .con_box .scoreBox .defs_box .defs .defsCon {
+  flex: 1;
+}
+.groble .con_box .scoreBox .defs_box .defs .defsCon p:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.groble .con_box .scoreBox .defs_box .defs .defsCon p:nth-child(1) span:nth-child(1) {
+  font-size: 0.2rem;
+  color: #07111b;
+  line-height: 0.24rem;
+  margin-bottom: 0.08rem;
+}
+.groble .con_box .scoreBox .defs_box .defs .defsCon p:nth-child(1) span:nth-child(2) {
+  font-size: 0.2rem;
+  font-weight: 200;
+  color: #93999f;
+  line-height: 0.24rem;
+}
+.groble .con_box .scoreBox .defs_box .defs .defsCon div:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.12rem;
+}
+.groble .con_box .scoreBox .defs_box .defs .defsCon div:nth-of-type(1) img {
+  width: 0.2rem;
+  height: 0.2rem;
+  margin: 0 0.03rem;
+}
+.groble .con_box .scoreBox .defs_box .defs .defsCon div:nth-of-type(1) img:nth-child(1) {
+  margin-left: 0;
+}
+.groble .con_box .scoreBox .defs_box .defs .defsCon div:nth-of-type(1) span {
+  font-size: 0.2rem;
+  font-weight: 200;
+  color: #93999f;
+  line-height: 0.3rem;
+  margin-left: 0.12rem;
+}
+.groble .con_box .scoreBox .defs_box .defs .defsCon p:nth-of-type(2) {
+  font-size: 0.24rem;
+  color: #07111b;
+  line-height: 0.36rem;
+  margin-bottom: 0.16rem;
+}
+.groble .con_box .scoreBox .defs_box .defs .defsCon div:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+}
+.groble .con_box .scoreBox .defs_box .defs .defsCon div:nth-of-type(2) .defsZan {
+  color: #00a0dc;
+  font-size: 0.36rem;
+  margin-right: 0.16rem;
+}
+.groble .con_box .scoreBox .defs_box .defs .defsCon div:nth-of-type(2) span {
+  padding: 0 0.12rem;
+  font-size: 0.18rem;
+  color: #93999f;
+  line-height: 0.32rem;
+  border: 0.01rem solid rgba(7, 17, 27, 0.1);
+  border-radius: 0.02rem;
+}
+.groble .con_box .scoreBox .defs_box .defs .defsCon div:nth-of-type(2) .defsCai {
+  color: #b7bbbf;
+}
+.groble .con_box .sellerBox {
+  height: calc(100vh - 4.6rem);
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+.groble .con_box .sellerBox .sellerTitleBox {
+  padding: 0.36rem;
+}
+.groble .con_box .sellerBox .sellerTitleBox .sellerHead {
+  width: calc(100vw - 0.72rem);
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 0.36rem;
+  align-content: flex-start;
+  border-bottom: 0.02rem solid rgba(7, 17, 27, 0.1);
+}
+.groble .con_box .sellerBox .sellerTitleBox .sellerHead .sellerHeadLeft {
+  flex: 1;
+}
+.groble .con_box .sellerBox .sellerTitleBox .sellerHead .sellerHeadLeft p {
+  font-size: 0.28rem;
+  color: #07111b;
+  line-height: 0.28rem;
+  margin-bottom: 0.16rem;
+}
+.groble .con_box .sellerBox .sellerTitleBox .sellerHead .sellerHeadLeft div {
+  display: flex;
+  align-items: center;
+}
+.groble .con_box .sellerBox .sellerTitleBox .sellerHead .sellerHeadLeft div img {
+  width: 0.3rem;
+  height: 0.3rem;
+  margin: 0 0.06rem;
+}
+.groble .con_box .sellerBox .sellerTitleBox .sellerHead .sellerHeadLeft div img:nth-child(1) {
+  margin-left: 0;
+}
+.groble .con_box .sellerBox .sellerTitleBox .sellerHead .sellerHeadLeft div span {
+  font-size: 0.2rem;
+  color: #4d555d;
+  line-height: 0.36rem;
+}
+.groble .con_box .sellerBox .sellerTitleBox .sellerHead .sellerHeadLeft div span:nth-of-type(1) {
+  margin-left: 0.16rem;
+  margin-right: 0.24rem;
+}
+.groble .con_box .sellerBox .sellerTitleBox .sellerHead .sellerHeadRight {
+  text-align: center;
+}
+.groble .con_box .sellerBox .sellerTitleBox .sellerHead .sellerHeadRight div:nth-child(1) {
+  font-size: 0.48rem;
+  color: #f01414;
+  line-height: 0.48rem;
+  margin-bottom: 0.08rem;
+}
+.groble .con_box .sellerBox .sellerTitleBox .sellerHead .sellerHeadRight div:nth-child(2) {
+  font-size: 0.2rem;
+  color: #4d555d;
+  line-height: 0.2rem;
+}
+.groble .con_box .sellerBox .sellerMsg {
+  display: flex;
+  width: calc(100vw);
+  justify-content: space-around;
+  padding-bottom: 0.36rem;
+  text-align: center;
+  border-bottom: 0.03rem solid rgba(7, 17, 27, 0.1);
+}
+.groble .con_box .sellerBox .sellerMsg span {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+.groble .con_box .sellerBox .sellerMsg span p:nth-child(1) {
+  font-size: 0.2rem;
+  color: #93999f;
+  line-height: 0.2rem;
+  margin-bottom: 0.12rem;
+}
+.groble .con_box .sellerBox .sellerMsg span p:nth-child(2) {
+  font-size: 0.2rem;
+  color: #07111b;
+  font-weight: 200;
+  line-height: 0.48rem;
+}
+.groble .con_box .sellerBox .sellerMsg span p:nth-child(2) i {
+  font-size: 0.48rem;
+}
+.groble .con_box .sellerBox .sellerMsg span:nth-child(2) {
+  border-left: 0.02rem solid rgba(7, 17, 27, 0.1);
+  border-right: 0.02rem solid rgba(7, 17, 27, 0.1);
+  margin-left: 0.5rem;
+}
+.groble .con_box .sellerBox .sellerBg {
+  height: 0.34rem;
+  width: 100%;
+  background: #f3f5f7;
+  border-bottom: 0.02rem solid rgba(7, 17, 27, 0.1);
+}
+.groble .con_box .sellerBox .sellerBg:nth-of-type(2) {
+  height: 0.32rem;
+}
+.groble .con_box .sellerBox .sellerNotice {
+  padding: 0.36rem 0.36rem 0;
+}
+.groble .con_box .sellerBox .sellerNotice h4 {
+  font-size: 0.28rem;
+  color: #07111b;
+  line-height: 0.28rem;
+  margin-bottom: 0.16rem;
+}
+.groble .con_box .sellerBox .sellerNotice p {
+  font-size: 0.24rem;
+  font-weight: 200;
+  color: #f01414;
+  line-height: 0.48rem;
+  padding: 0.24rem;
+}
+.groble .con_box .sellerBox .sellerList {
+  padding: 0 0.36rem;
+}
+.groble .con_box .sellerBox .sellerList:nth-of-type(2) li:nth-child(1) {
+  border-top: 0;
+}
+.groble .con_box .sellerBox .sellerList li {
+  width: calc(100vw - 0.72rem);
+  padding: 0.32rem 0.24rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.02rem solid rgba(7, 17, 27, 0.1);
+}
+.groble .con_box .sellerBox .sellerList li:nth-child(1) {
+  border-top: 0.02rem solid rgba(7, 17, 27, 0.1);
+}
+.groble .con_box .sellerBox .sellerList li img {
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-right: 0.12rem;
+}
+.groble .con_box .sellerBox .sellerList li span {
+  font-size: 0.24rem;
+  font-weight: 200;
+  color: #07111b;
+  line-height: 0.32rem;
+}
+.groble .con_box .sellerBox .sellerList li:nth-of-type(1)::before {
+  content: "";
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-right: 0.12rem;
+  background: url("../images/decrease_4@2x.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.groble .con_box .sellerBox .sellerList li:nth-of-type(2)::before {
+  content: "";
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-right: 0.12rem;
+  background: url("../images/discount_4@2x.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.groble .con_box .sellerBox .sellerList li:nth-of-type(3)::before {
+  content: "";
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-right: 0.12rem;
+  background: url("../images/special_4@2x.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.groble .con_box .sellerBox .sellerList li:nth-of-type(4)::before {
+  content: "";
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-right: 0.12rem;
+  background: url("../images/invoice_4@2x.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.groble .con_box .sellerBox .sellerList li:nth-of-type(5)::before {
+  content: "";
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-right: 0.12rem;
+  background: url("../images/guarantee_4@2x.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.groble .con_box .sellerBox .sellerView {
+  padding: 0.36rem 0.36rem 0;
+}
+.groble .con_box .sellerBox .sellerView h4 {
+  font-size: 0.28rem;
+  color: #07111b;
+  line-height: 0.28rem;
+  margin-bottom: 0.24rem;
+}
+.groble .con_box .sellerBox .sellerView .viewSwiper {
+  width: calc(100vw - 0.36rem);
+}
+.groble .con_box .sellerBox .sellerView .viewSwiper .swiper-wrapper {
+  width: auto;
+}
+.groble .con_box .sellerBox .sellerView .viewSwiper .swiper-wrapper .swiper-slide {
+  margin-right: 0.12rem;
+}
+.groble .con_box .sellerBox .sellerView .viewSwiper .swiper-wrapper .swiper-slide img {
+  width: 2.4rem;
+  height: 1.8rem;
+}
+.groble .con_box .sellerBox .AddressList {
+  padding: 0 0.36rem;
+}
+.groble .con_box .sellerBox .AddressList:nth-of-type(2) li:nth-child(1) {
+  border-top: 0;
+}
+.groble .con_box .sellerBox .AddressList li {
+  width: calc(100vw - 0.72rem);
+  padding: 0.32rem 0.24rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.02rem solid rgba(7, 17, 27, 0.1);
+}
+.groble .con_box .sellerBox .AddressList li:nth-child(1) {
+  border-top: 0.02rem solid rgba(7, 17, 27, 0.1);
+}
+.groble .con_box .sellerBox .AddressList li img {
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-right: 0.12rem;
+}
+.groble .con_box .sellerBox .AddressList li span {
+  font-size: 0.24rem;
+  font-weight: 200;
+  color: #07111b;
+  line-height: 0.32rem;
+}
+.groble .con_box footer {
+  z-index: 100;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.18rem;
+  background: #141d27;
+  display: flex;
+  align-items: center;
+}
+.groble .con_box footer .footFoodCar {
+  position: absolute;
+  left: 0.24rem;
+  top: -0.3rem;
+  width: 1.24rem;
+  height: 1.24rem;
+  border-radius: 50%;
+  background: #141d27;
+  padding: 0.12rem;
+}
+.groble .con_box footer .footFoodCar .foodCarAfter {
+  display: none;
+  position: absolute;
+  top: 0.12rem;
+  right: 0;
+  width: 0.36rem;
+  height: 0.3rem;
+  border-radius: 0.1rem;
+  background: #f01414;
+  color: white;
+  line-height: 0.3rem;
+  text-align: center;
+  font-size: 0.2rem;
+}
+.groble .con_box footer .footFoodCar .carFont {
+  width: 1.12rem;
+  height: 1.12rem;
+  margin-left: -0.06rem;
+  margin-top: 0.06rem;
+  border-radius: 50%;
+  background: #2d343c;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.groble .con_box footer .footFoodCar .carFont.blue {
+  background: #00a0dc;
+}
+.groble .con_box footer .footFoodCar .carFont .carBtn {
+  flex: 1;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 0.48rem;
+  display: inline-block;
+}
+.groble .con_box footer .footFoodCar .carFont .carBtn.white {
+  color: white;
+}
+.groble .con_box footer i:nth-of-type(1) {
+  font-size: 0.32rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 700;
+  line-height: 0.48rem;
+  margin-left: 1.6rem;
+  margin-right: 0.24rem;
+}
+.groble .con_box footer i:nth-of-type(1).on {
+  color: white;
+}
+.groble .con_box footer i:nth-of-type(2) {
+  background: rgba(255, 255, 255, 0.1);
+  width: 0.04rem;
+  height: 0.46rem;
+  margin-right: 0.24rem;
+}
+.groble .con_box footer i:nth-of-type(3) {
+  font-size: 0.32rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 700;
+  line-height: 0.48rem;
+}
+.groble .con_box footer .deliver {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 1.18rem;
+  width: 2.22rem;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.groble .con_box footer .deliver.on {
+  background: #00a0dc;
+}
+.groble .con_box footer .deliver span {
+  display: inline-block;
+  font-size: 0.32rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 700;
+  line-height: 0.48rem;
+}
+.groble .con_box footer .deliver span.on {
+  color: white;
+}
+/*******************************主体内容部分*********************************/
+/********************************优惠界面************************************************/
+.discount {
+  display: none;
+  width: 100%;
+  height: 13.36rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(7, 17, 27, 0.8);
+  z-index: 99;
+  padding: 1.28rem 0.72rem 0.64rem;
+  text-align: center;
+}
+.discount .storeTitle .stareHead {
+  font-size: 0.32rem;
+  font-weight: 700;
+  color: white;
+  line-height: 0.32rem;
+  margin-bottom: 0.32rem;
+}
+.discount .storeTitle .stare {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.56rem;
+}
+.discount .storeTitle .stare img {
+  margin: 0 0.15rem;
+}
+.discount .discount_msg .msg_head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.48rem;
+}
+.discount .discount_msg .msg_head span:nth-child(1) {
+  display: inline-block;
+  width: 2.2rem;
+  height: 0.04rem;
+  margin-right: 0.2rem;
+  background: rgba(255, 255, 255, 0.2);
+}
+.discount .discount_msg .msg_head span:nth-child(2) {
+  font-size: 0.28rem;
+  font-weight: 700;
+  color: white;
+  line-height: 0.28rem;
+}
+.discount .discount_msg .msg_head span:nth-child(3) {
+  display: inline-block;
+  width: 2.2rem;
+  height: 0.04rem;
+  margin-left: 0.2rem;
+  background: rgba(255, 255, 255, 0.2);
+}
+.discount .discount_msg .msg_con li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.24rem;
+}
+.discount .discount_msg .msg_con li span {
+  font-size: 0.24rem;
+  font-weight: 200;
+  color: white;
+  line-height: 0.24rem;
+  margin-left: 0.12rem;
+}
+.discount .discount_msg .msg_con li:nth-of-type(1)::before {
+  content: "";
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-right: 0.12rem;
+  background: url("../images/decrease_4@2x.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.discount .discount_msg .msg_con li:nth-of-type(2)::before {
+  content: "";
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-right: 0.12rem;
+  background: url("../images/discount_4@2x.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.discount .discount_msg .msg_con li:nth-of-type(3)::before {
+  content: "";
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-right: 0.12rem;
+  background: url("../images/discount_4@2x.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.discount .discount_msg .msg_con li:nth-of-type(4)::before {
+  content: "";
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-right: 0.12rem;
+  background: url("../images/special_2@2x.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.discount .discount_msg .msg_con li:nth-of-type(5)::before {
+  content: "";
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-right: 0.12rem;
+  background: url("../images/special_2@2x.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.discount .discount_msg .msg_text {
+  padding: 0.24rem;
+  text-align: left;
+  font-size: 0.24rem;
+  font-weight: 200;
+  color: #ffffff;
+  line-height: 0.48rem;
+}
+.discount .discount_msg .delete {
+  font-size: 0.64rem;
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  bottom: 0.64rem;
+  left: 50%;
+  margin-left: -0.32rem;
+}
+/***********************************购物车界面******************************************/
+.shoppingCard {
+  display: none;
+  width: 100%;
+  height: 13.36rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(7, 17, 27, 0.6);
+  z-index: 99;
+}
+.carList {
+  display: none;
+  z-index: 99;
+  position: absolute;
+  bottom: 1.18rem;
+  left: 0;
+  width: 100%;
+}
+.carList .carHead {
+  height: 0.8rem;
+  background: #f3f5f7;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.02rem solid rgba(7, 17, 27, 0.1);
+}
+.carList .carHead span:nth-child(1) {
+  margin: 0 0.36rem;
+  font-size: 0.28rem;
+  font-weight: 200;
+  color: #07111b;
+  line-height: 0.8rem;
+}
+.carList .carHead span:nth-child(2) {
+  margin: 0 0.36rem;
+  font-size: 0.24rem;
+  font-weight: 200;
+  color: #00a0dc;
+  line-height: 0.8rem;
+}
+.carList .foodCarList {
+  z-index: -1;
+}
+.carList .foodCarList.on {
+  height: calc(100vh - 9rem);
+  overflow: auto;
+}
+.carList .foodCarList .carSlist {
+  background: white;
+  display: flex;
+  padding: 0.24rem 0.36rem;
+  justify-content: space-between;
+  height: 0.96rem;
+}
+.carList .foodCarList .carSlist div:nth-child(1) {
+  font-size: 0.28rem;
+  color: #07111b;
+  line-height: 0.48rem;
+}
+.carList .foodCarList .carSlist div:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+.carList .foodCarList .carSlist div:nth-child(2) span:nth-of-type(1) {
+  margin-left: 0.36rem;
+  margin-right: 0.24rem;
+  font-weight: 700;
+  font-size: 0.28rem;
+  color: #f01414;
+  line-height: 0.48rem;
+}
+.carList .foodCarList .carSlist div:nth-child(2) span:nth-of-type(1) i {
+  font-weight: normal;
+  font-size: 0.2rem;
+}
+.carList .foodCarList .carSlist div:nth-child(2) span:nth-of-type(2) {
+  font-size: 0.48rem;
+  color: #00a0dc;
+  line-height: 0.48rem;
+}
+.carList .foodCarList .carSlist div:nth-child(2) .carNum {
+  font-size: 0.2rem;
+  color: #93999f;
+  line-height: 0.48rem;
+  border: none;
+  width: 0.4rem;
+  text-align: center;
+}
+.carList .foodCarList .carSlist div:nth-child(2) span:nth-of-type(3) {
+  font-size: 0.48rem;
+  color: #00a0dc;
+  line-height: 0.48rem;
+}
+.singleFood {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: calc(100vw);
+  z-index: 9999;
+  height: calc(100vh);
+  background: white;
+  overflow: auto;
+  display: none;
+}
+.singleFood .singleImg {
+  width: 100%;
+  height: 7.5rem;
+}
+.singleFood .singleHead {
+  padding: 0.36rem;
+}
+.singleFood .singleHead p:nth-of-type(1) {
+  margin-bottom: 0.16rem;
+  font-size: 0.28rem;
+  font-weight: 700;
+  color: #07111b;
+  line-height: 0.28rem;
+}
+.singleFood .singleHead p:nth-of-type(2) {
+  margin-bottom: 0.36rem;
+  font-size: 0.2rem;
+  color: #93999f;
+  line-height: 0.2rem;
+}
+.singleFood .singleHead p:nth-of-type(2) span:nth-child(1) {
+  margin-right: 0.24rem;
+}
+.singleFood .singleHead .singleCon {
+  display: flex;
+  align-items: center;
+}
+.singleFood .singleHead .singleCon .singleConTop {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.singleFood .singleHead .singleCon .singleConTop span:nth-child(1) {
+  font-size: 0.2rem;
+  font-weight: normal;
+  color: #f01414;
+  line-height: 0.48rem;
+  margin-right: 0.24rem;
+}
+.singleFood .singleHead .singleCon .singleConTop span:nth-child(1) i {
+  font-size: 0.28rem;
+  font-weight: 700;
+}
+.singleFood .singleHead .singleCon .singleConTop span:nth-child(2) {
+  font-size: 0.2rem;
+  font-weight: normal;
+  color: #93999f;
+  line-height: 0.48rem;
+}
+.singleFood .singleHead .singleCon .singleConTop span:nth-child(2) i {
+  font-size: 0.20rem;
+  font-weight: 700;
+}
+.singleFood .singleHead .singleConBot {
+  width: 1.48rem;
+  height: 0.48rem;
+  background: #00a0dc;
+  line-height: 0.48rem;
+  text-align: center;
+  font-size: 0.2rem;
+  color: white;
+  border-radius: 0.24rem;
+}
+.singleFood .singleBg {
+  height: 0.32rem;
+  width: 100%;
+  background: #f3f5f7;
+  border-bottom: 0.02rem solid rgba(7, 17, 27, 0.1);
+  border-top: 0.02rem solid rgba(7, 17, 27, 0.1);
+}
+.singleFood .singleInfos {
+  padding: 0.36rem;
+}
+.singleFood .singleInfos h4 {
+  font-size: 0.28rem;
+  color: #07111b;
+  line-height: 0.28rem;
+  margin-bottom: 0.16rem;
+}
+.singleFood .singleInfos p {
+  font-size: 0.24rem;
+  font-weight: 200;
+  color: #4d555d;
+  line-height: 0.48rem;
+  padding: 0.16rem;
+}
+.singleFood .singleAss h4 {
+  font-size: 0.28rem;
+  color: #07111b;
+  line-height: 0.28rem;
+  margin-left: 0.36rem;
+  margin-top: 0.36rem;
+}
+.singleFood .singleAss .singleAssTop {
+  padding: 0.36rem 0.36rem 0.36rem 0;
+  margin-left: 0.36rem;
+  width: calc(100vw - 0.72rem);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 0.02rem solid rgba(7, 17, 27, 0.1);
+}
+.singleFood .singleAss .singleAssTop span {
+  display: inline-block;
+  width: 1.22rem;
+  height: 0.66rem;
+  line-height: 0.66rem;
+  text-align: center;
+  color: white;
+  font-size: 0.24rem;
+  margin-right: 0.16rem;
+}
+.singleFood .singleAss .singleAssTop span:nth-child(1) {
+  background: #00a0dc;
+}
+.singleFood .singleAss .singleAssTop span:nth-child(2) {
+  background: #ccecf8;
+  color: #4d555d;
+}
+.singleFood .singleAss .singleAssTop span:nth-child(3) {
+  width: 1.46rem;
+  background: #E9EbEC;
+  color: #4d555d;
+}
+.singleFood .singleAss .singleAssBot {
+  padding: 0.28rem 0.4rem;
+  display: flex;
+  align-items: center;
+  width: calc(100vw);
+  border-bottom: 0.03rem solid rgba(7, 17, 27, 0.1);
+}
+.singleFood .singleAss .singleAssBot span {
+  font-size: 0.3rem;
+  color: #b7bbbf;
+}
+.singleFood .singleList {
+  padding: 0 0.36rem;
+}
+.singleFood .singleList li {
+  padding: 0.32rem 0;
+  border-bottom: 0.02rem solid rgba(7, 17, 27, 0.1);
+}
+.singleFood .singleList li .singleFir {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.12rem;
+}
+.singleFood .singleList li .singleFir div:nth-child(1) {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.singleFood .singleList li .singleFir div:nth-child(1) span {
+  font-size: 0.2rem;
+  color: #93999f;
+  line-height: 0.24rem;
+}
+.singleFood .singleList li .singleFir div:nth-child(1) span:nth-child(1) {
+  margin-right: 0.24rem;
+}
+.singleFood .singleList li .singleFir div:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+.singleFood .singleList li .singleFir div:nth-child(2) span {
+  font-size: 0.2rem;
+  color: #93999f;
+  line-height: 0.24rem;
+  margin-right: 0.12rem;
+}
+.singleFood .singleList li .singleFir div:nth-child(2) img {
+  width: 0.24rem;
+  height: 0.24rem;
+  border-radius: 50%;
+}
+.singleFood .singleList li .singleSec {
+  display: flex;
+  align-items: center;
+}
+.singleFood .singleList li .singleSec span:nth-child(1) {
+  font-size: 0.24rem;
+  color: #93999f;
+  line-height: 0.48rem;
+  margin-right: 0.08rem;
+}
+.singleFood .singleList li .singleSec span:nth-child(2) {
+  font-size: 0.24rem;
+  color: #07111b;
+  line-height: 0.32rem;
+}
+.singleFood .singleDel {
+  position: fixed;
+  top: 0.2rem;
+  right: 0.12rem;
+  color: rgba(7, 17, 27, 0.6);
+  font-size: 0.72rem;
+}
